@@ -1,11 +1,15 @@
+import { Difficulty } from '../../components/Difficulty/Difficulty';
 import * as S from './style/mainPage.S'
 
 export const MainPage = () => {
 
     return (
 
-        <>
-            <S.Title> Привет </S.Title >
-        </>
-    );
+        <S.Wrapper>
+            <S.Container>
+                <Difficulty />
+            </S.Container>
+        </S.Wrapper>
+    )
+
 };
