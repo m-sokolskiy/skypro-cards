@@ -18,18 +18,16 @@ const Difficulty = () => {
     }
 
     return (
-
         <S.Container>
             <S.Title>Выбери сложность</S.Title>
-
-            {levels.map((level) => {
-                return (
-                    <DifficultyOption key={level.id} id={level.id} value={level.value} label={level.label} />
-                )
-            })}
-
+            <S.InputContainer>
+                {levels.map((level) => {
+                    return (
+                        <DifficultyOption key={level.id} id={level.id} value={level.value} label={level.label} />
+                    )
+                })}
+            </S.InputContainer>
             <S.Button>Cтарт</S.Button>
-
         </S.Container >
     );
 };
