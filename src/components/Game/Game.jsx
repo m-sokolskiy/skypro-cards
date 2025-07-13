@@ -1,11 +1,10 @@
-// import * as S from './style/Game.S'
-
-
 const Game = () => {
+
+    const level = localStorage.getItem('level');
 
     return (
         <div>
-            Игра
+            {level}
         </div>
     );
 };
