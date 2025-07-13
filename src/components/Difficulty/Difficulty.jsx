@@ -1,6 +1,12 @@
+import { useNavigate } from 'react-router-dom';
 import * as S from './style/Difficulty.S'
+import { useState } from 'react';
 
 const Difficulty = () => {
+
+    const navigate = useNavigate()
+
+    const [isLevel, setIsLevel] = useState(null);
 
     const levels = [
         { id: 'radio1', value: '1', label: '1' },
@@ -8,10 +14,23 @@ const Difficulty = () => {
         { id: 'radio3', value: '3', label: '3' },
     ];
 
+    const handleChange = (e) => {
+        setIsLevel(e.target.value);
+    };
+
+    const handleStart = () => {
+        if (isLevel) {
+            localStorage.setItem('level', `${isLevel}`);
+            navigate('/game');
+        } else {
+            alert('Выбери сложность!');
+        }
+    };
+
     const DifficultyOption = ({ id, value, label }) => {
         return (
             <>
-                <S.Input id={id} value={value} name="radios" type="radio" ></S.Input>
+                <S.Input id={id} value={value} name="radios" type="radio" onChange={handleChange}></S.Input>
                 <S.Label htmlFor={id}>{label}</S.Label>
             </>
         )
@@ -27,7 +46,7 @@ const Difficulty = () => {
                     )
                 })}
             </S.InputContainer>
-            <S.Button>Cтарт</S.Button>
+            <S.Button onClick={handleStart}>Cтарт</S.Button>
         </S.Container >
     );
 };
