@@ -1,10 +1,12 @@
+import { useSelector } from "react-redux";
+
 const Game = () => {
 
-    const level = localStorage.getItem('level');
+    const isLevel = useSelector(state => state.game.level)
 
     return (
         <div>
-            {level}
+            {isLevel}
         </div>
     );
 };

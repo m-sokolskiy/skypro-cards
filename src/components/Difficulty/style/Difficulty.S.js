@@ -44,7 +44,6 @@ export const Button = styled.button`
 
 `
 
-// Input
 export const InputContainer = styled.div`
  background: none;
  border: none;
@@ -52,33 +51,4 @@ export const InputContainer = styled.div`
  gap: 24px;
  padding-top: 48px;
  padding-bottom: 64px;
-`
-
-export const Input = styled.input`
- display: none;
-
-  &:checked + label {
-    background-color: #00C2FF;
-    color: #fff;
-  }
-    
-`
-export const Label = styled.label`
- width: 98px;
- height: 98px;
- border: none;
- border-radius: 12px;
- background-color: #ffffff;
- color: #004980;
- font-family: StratosSkyeng;
- font-weight: 400;
- font-size: 64px;
- display: flex;
- align-items: center;
- justify-content: center;
- cursor: pointer;
-
- &:hover {
-   background-color: #B9EA2C;
-  }
 `
