@@ -1,17 +1,16 @@
-import { useSelector } from 'react-redux';
-import { Game } from '../../components/Game/Game';
-import * as S from './style/gamePage.S'
-import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import * as S from './style/resultPage.S'
+import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
 
-export const GamePage = () => {
+export const ResultPage = () => {
 
     const navigate = useNavigate()
 
     const isStatus = useSelector(state => state.game.status)
 
     useEffect(() => {
-        if (isStatus !== 'game') {
+        if (isStatus !== 'result') {
             navigate('/');
         }
     }, []);
@@ -19,7 +18,7 @@ export const GamePage = () => {
     return (
         <S.Wrapper>
             <S.Container>
-                <Game />
+                <> Привет </>
             </S.Container>
         </S.Wrapper>
     );

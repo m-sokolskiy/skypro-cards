@@ -1,17 +1,20 @@
 import { useNavigate } from 'react-router-dom';
 import * as S from './style/Difficulty.S'
 import { LEVELS } from '../../lib/LEVELS';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { DifficultyOption } from '../DifficultyOption/DifficultyOption';
+import { setStatus } from '../../store/slices/slices';
 
 const Difficulty = () => {
 
     const navigate = useNavigate()
+    const dispatch = useDispatch()
 
     const isLevel = useSelector(state => state.game.level)
 
     const handleStart = () => {
         if (isLevel) {
+            dispatch(setStatus('game'))
             navigate('/game');
         } else {
             alert('Выбери сложность!');

@@ -1,19 +1,19 @@
 import { useDispatch } from 'react-redux';
 import { Difficulty } from '../../components/Difficulty/Difficulty';
-import * as S from './style/mainPage.S'
+import * as S from './style/startPage.S'
 import { useEffect } from 'react';
-import { setLevel } from '../../store/slices/slices';
+import { setLevel, setStatus } from '../../store/slices/slices';
 
-export const MainPage = () => {
+export const StartPage = () => {
 
     const dispatch = useDispatch()
 
     useEffect(() => {
         dispatch(setLevel(null))
-    },[])
+        dispatch(setStatus('start'))
+    }, [])
 
     return (
-
         <S.Wrapper>
             <S.Container>
                 <Difficulty />
