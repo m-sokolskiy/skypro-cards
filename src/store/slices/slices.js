@@ -1,22 +1,22 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 export const gameSlice = createSlice({
-    name: "game",
-    initialState: {
-        level: (null),
-        status: (null),
+  name: 'game',
+  initialState: {
+    level: null,
+    status: null,
+  },
+  reducers: {
+    setLevel: (state, action) => {
+      state.level = action.payload;
     },
-    reducers: {
-        setLevel: (state, action) => {
-            state.level = action.payload;
-        },
-        setStatus: (state, action) => {
-            state.status = action.payload;
-        },
+    setStatus: (state, action) => {
+      state.status = action.payload;
     },
+  },
 });
 
-const gameReducer = gameSlice.reducer
+const gameReducer = gameSlice.reducer;
 
 export const { setLevel, setStatus } = gameSlice.actions;
 export default gameReducer;
