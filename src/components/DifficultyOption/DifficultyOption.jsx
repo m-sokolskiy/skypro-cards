@@ -3,6 +3,9 @@ import { setLevel } from '../../store/slices/slices';
 import * as S from './style/DifficultyOption.S';
 
 const DifficultyOption = ({ id, value, label }) => {
+  const test = 'hello';
+  console.log(test);
+
   const dispatch = useDispatch();
 
   const handleChange = () => {
