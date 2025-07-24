@@ -5,20 +5,18 @@ export const GlobalStyle = createGlobalStyle`
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 a,
 a:visited {
   text-decoration: none;
-  font-family: "StratosSkyeng", sans-serif;
+  font-family: StratosSkyeng, sans-serif;
   cursor: pointer;
 }
 
@@ -31,7 +29,7 @@ ul li {
 }
 
 @font-face {
-  font-family: "StratosSkyeng";
+  font-family: StratosSkyeng;
   src: url('./fonts/StratosSkyeng') format("woff2", "woff");
   font-weight: 400;
   font-style: normal;
@@ -41,14 +39,14 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: "StratosSkyeng", sans-serif;
-  color: #ffffff;
+  font-family: StratosSkyeng, sans-serif;
+  color: #fff;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -56,7 +54,7 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    monospace, sans-serif;
 }
 
-`
+`;
