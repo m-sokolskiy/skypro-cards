@@ -1,8 +1,7 @@
 {
-  "extends": ["stylelint-config-standard", "stylelint-prettier/recommended"],
-  "plugins": ["stylelint-prettier"],
+  "customSyntax": "postcss-styled-syntax",
+  "extends": ["stylelint-config-standard"],
   "rules": {
-    "prettier/prettier": true,
     "font-family-no-missing-generic-family-keyword": [
       true,
       {

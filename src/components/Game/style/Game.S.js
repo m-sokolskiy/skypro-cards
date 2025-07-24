@@ -6,8 +6,8 @@ export const Button = styled.button`
   border-radius: 12px;
   border: none;
   background-color: #7ac100;
-  color: #ffffff;
-  font-family: StratosSkyeng;
+  color: #fff;
+  font-family: StratosSkyeng, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;

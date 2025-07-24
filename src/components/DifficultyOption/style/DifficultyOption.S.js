@@ -22,9 +22,9 @@ export const Label = styled.label`
   height: 98px;
   border: none;
   border-radius: 12px;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #004980;
-  font-family: StratosSkyeng;
+  font-family: StratosSkyeng, sans-serif;
   font-weight: 400;
   font-size: 64px;
   display: flex;

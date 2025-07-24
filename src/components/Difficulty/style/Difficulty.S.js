@@ -15,7 +15,7 @@ export const Title = styled.div`
   height: 96px;
   padding-top: 52px;
   padding-bottom: 48px;
-  font-family: StratosSkyeng;
+  font-family: StratosSkyeng, sans-serif;
   font-weight: 400;
   font-size: 40px;
   display: flex;
@@ -31,8 +31,8 @@ export const Button = styled.button`
   border-radius: 12px;
   border: none;
   background-color: #7ac100;
-  color: #ffffff;
-  font-family: StratosSkyeng;
+  color: #fff;
+  font-family: StratosSkyeng, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;

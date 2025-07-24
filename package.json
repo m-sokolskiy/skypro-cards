@@ -23,7 +23,10 @@
     "format": "prettier . --write",
     "format:check": "prettier . --check",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix"
+    "lint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
+    "stylelint": "stylelint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "stylelint:fix": "stylelint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
+    "lint:all": "npm run format && npm run lint:fix && npm run stylelint:fix"
   },
   "eslintConfig": {
     "extends": [
@@ -51,10 +54,9 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "globals": "^15.9.0",
-    "pretier": "0.0.1",
+    "postcss-styled-syntax": "^0.7.1",
     "prettier": "^3.6.2",
     "stylelint": "^16.22.0",
-    "stylelint-config-standard": "^38.0.0",
-    "stylelint-prettier": "^5.0.3"
+    "stylelint-config-standard": "^38.0.0"
   }
 }
