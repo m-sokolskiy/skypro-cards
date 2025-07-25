@@ -17,3 +17,14 @@ export const Button = styled.button`
     background-color: #00c2ff;
   }
 `;
+
+export const SidebarItem = styled.div`
+  width: 95px;
+  height: 133px;
+  gap: 15px;
+`;
+
+export const SidebarImg = styled.img`
+  width: 100%;
+  height: auto;
+`;

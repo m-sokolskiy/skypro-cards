@@ -5,6 +5,7 @@ export const gameSlice = createSlice({
   initialState: {
     level: null,
     status: null,
+    currentTime: 0,
   },
   reducers: {
     setLevel: (state, action) => {
@@ -13,10 +14,16 @@ export const gameSlice = createSlice({
     setStatus: (state, action) => {
       state.status = action.payload;
     },
+    setCurrentTime: (state) => {
+      state.currentTime += 1;
+    },
+    resetTime: (state) => {
+      state.currentTime = 0;
+    },
   },
 });
 
 const gameReducer = gameSlice.reducer;
 
-export const { setLevel, setStatus } = gameSlice.actions;
+export const { setLevel, setStatus, setCurrentTime } = gameSlice.actions;
 export default gameReducer;
