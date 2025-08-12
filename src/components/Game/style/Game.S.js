@@ -1,5 +1,29 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const HeaderContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+`;
+
+export const CardsContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 10px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  justify-items: center;
+  box-sizing: border-box;
+`;
+
 export const Button = styled.button`
   width: 246px;
   height: 50px;
@@ -16,15 +40,4 @@ export const Button = styled.button`
   &:hover {
     background-color: #00c2ff;
   }
-`;
-
-export const SidebarItem = styled.div`
-  width: 95px;
-  height: 133px;
-  gap: 15px;
-`;
-
-export const SidebarImg = styled.img`
-  width: 100%;
-  height: auto;
 `;

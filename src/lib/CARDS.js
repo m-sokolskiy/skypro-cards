@@ -7,7 +7,7 @@ export const CARDS = [
   { id: 6, name: 'hearts_king', img: '../img/cards/hearts_kin.png' },
   { id: 7, name: 'diamonds_king', img: '../img/cards/diamonds_king.png' },
   { id: 8, name: 'clubs_king', img: '../img/cards/clubs_king.png' },
-  { id: 9, name: 'spades_queen', img: '../img/cards/cards/spades_queen.png' },
+  { id: 9, name: 'spades_queen', img: '../img/cards/spades_queen.png' },
   { id: 10, name: 'hearts_queen', img: '../img/cards/hearts_queen.png' },
   { id: 11, name: 'diamonds_queen', img: '../img/cards/diamonds_queen.png' },
   { id: 12, name: 'clubs_queen', img: '../img/cards/clubs_queen.png' },
