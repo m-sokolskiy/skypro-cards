@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^7.6.3",
     "react-scripts": "^5.0.1",
     "styled-components": "^6.1.19",
@@ -17,7 +19,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
+    "stylelint": "stylelint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "stylelint:fix": "stylelint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
+    "lint:all": "npm run format && npm run lint:fix && npm run stylelint:fix"
   },
   "eslintConfig": {
     "extends": [
@@ -39,10 +48,15 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.2",
+    "eslint-plugin-prettier": "^5.5.3",
     "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
     "globals": "^15.9.0",
-    "pretier": "0.0.1"
+    "postcss-styled-syntax": "^0.7.1",
+    "prettier": "^3.6.2",
+    "stylelint": "^16.22.0",
+    "stylelint-config-standard": "^38.0.0"
   }
 }

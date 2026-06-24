@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   width: 100%;
   min-height: 100%;
   overflow: hidden;
-  background-color:#004980;
-`
+  background-color: #004980;
+`;
 export const Container = styled.div`
   max-width: 1920px;
   height: 100vh;
@@ -15,4 +15,4 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`
+`;
